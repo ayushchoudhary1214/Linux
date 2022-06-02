@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh (It will tell the terminal this is a bash/shell script)
 if [ $(df -h | grep nvme1n1 | awk '{print $5}' | cut -d '%' -f1) -gt 75 ]
 then
     cd /jenkinsmaster/jobs
